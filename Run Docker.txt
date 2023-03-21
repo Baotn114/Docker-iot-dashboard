@@ -1,0 +1,4 @@
+How to run IOT Dashboard on Localhost:3000
+
+=> docker pull baosuper345/my_iot_dashboard
+=> docker run -it -p 3000:3000 baosuper345/my_iot_dashboard

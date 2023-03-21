@@ -1,0 +1,23 @@
+# Xem các image đã được tạo ra trong docker
+=> docker images
+# Xóa các images
+=> docker images rm + tên của image
+
+# Xem các container đang chạy trong docker
+=> docker ps -a 
+# Xóa các container
+=> docker rm + id của container
+
+# Build image từ file Dockerfile
+=> docker build -t tên_muốn_đặt thư_mục_chứa_docker_file
+
+# Run các image thành các container/apps
+=> docker run -it -p `${PORT_của_máy}`:`{PORT_của_Docker}` 
+
+# Push image lên docker hup
+=> docker tag tên_image_được_tạo_trong_docker username_của_Docker/tên_repo_muốn_đặt
+=> docker push username_của_Docker/tên_repo_muốn_đặt
+
+# Pull image từ docker về (private repo)
+=> docker login
+=> docker pull "repositoryName"/"imageName"
